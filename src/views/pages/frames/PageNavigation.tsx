@@ -16,11 +16,11 @@ const style = {
   },
 };
 
-interface PageNavigation {
+interface PageNavigationProps {
   loc: number;
 }
 
-const PageNavigation: React.FC<PageNavigation> = (props) => {
+const PageNavigation: React.FC<PageNavigationProps> = (props) => {
   const { loc } = props;
 
   const navigate = useNavigate();

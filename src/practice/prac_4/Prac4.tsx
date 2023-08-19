@@ -24,7 +24,7 @@ const Prac4: React.FC = () => {
       center: [Math.random() * 360 - 180, Math.random() * 180 - 90],
       zoom: 3,
     });
-  }, [fly]);
+  }, [fly, map]);
 
   const [cursor, setCursor] = React.useState<'grab' | 'grabbing'>('grab');
 
